@@ -1,0 +1,234 @@
+/* universal font for the page */
+* { 
+    font-family: 'Poppins', regular;
+}
+/* top navigation bar in blue */
+  .topnav {
+    overflow: hidden;
+    align-items: baseline;
+    background-color: #1C6E8C;
+  }
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 30px;
+    text-decoration: none;
+    font-size: 16px;
+  }
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+
+  /* hero image on top */
+.heroimage {
+  position: relative;
+  background-image: url("images/thunderstorm2_1000.jpg");
+  width: "100%";
+  background-color: #1C6E8C;
+}
+
+/* Top left main logo */
+.topleftlogo{
+  position: absolute;
+  margin-left: 20px;
+  margin-top: 20px;
+  top: 8px;
+  left: 16px;
+}
+
+/* Top left National Weather Service name */
+.topleftname {
+  position: absolute;
+  margin-left: 140px;
+  margin-top: 50px;
+  color: white;
+  top: 8px;
+  left: 16px;
+  font-size: xx-large;
+  font-weight: bolder;
+}
+
+/* Top right text search bar */
+.topright {
+  position: absolute;
+  margin-top: 65px;
+  top: 8px;
+  right: 16px;
+}
+.small {
+  line-height: 0.0;
+}
+
+/* Search city or zip search bar*/
+.searchcity {
+  position: relative;
+  top: 20px;
+}
+
+/* Flexbox for alert and personalize side-by-side*/
+.flex-thingy {
+  display: flex;
+  flex-direction: row;
+  justify-content:left;
+  background-color: lightblue;
+  background-image: linear-gradient(to right, white, lightblue);
+}
+.yellowalert {
+  background-color: yellow;
+  text-align: left;
+  margin: 40px 20px;
+  padding: 10px 40px 20px 40px;
+  width: 60%;
+}
+.personalize {
+  position: relative;
+  text-align: left;
+  padding: 40px 40px 10px 40px;
+}
+
+/* Map heading */
+.mapheading {
+  background-color: #1C6E8C;
+  position: relative;
+  text-align: left;
+  padding: 5px;
+  padding-left: 20px;
+  color: white;
+  width: 100%;
+}
+
+/* Flexbox for map key side-by-side with map*/
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #76a0c1;
+}
+
+/* bottom navigation bar in green */
+  .bottomnav {
+    overflow: hidden;
+    align-items: baseline;
+    background-color: #3F9686;
+  }
+  .bottomnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 30px;
+    text-decoration: none;
+    font-size: 16px;
+  }
+  .bottomnav a:hover {
+    background-color: #ddd;
+    color: black; 
+  }
+
+  /* bottom footer */
+  .footerleft {
+    position: absolute;
+    text-align: left;
+    float: left;
+    background-color: #1C6E8C;
+    color: #f2f2f2;
+    padding: 20px;
+    width: 50%;
+  }
+  .footerright {
+    text-align: right;
+    float: right;
+    background-color: #1C6E8C;
+    color: #f2f2f2;
+    padding: 20px;
+    width: 50%;
+  }
+  
+
+  /* Grid of cards at the bottom */
+  #categoryGrid {
+    margin: 50px 0px;
+    display: grid;
+    grid-template-rows: 300px 300px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+    "Tornado Thunderstorm News"
+    "Beach Beach News"
+    ;
+  }
+  #Tornado {
+    grid-area: Tornado;
+    background-image: url("../images/Tornado safety.png");
+  }
+  #Thunderstorm {
+    grid-area: Thunderstorm;
+    background-image: url("../images/Thunderstorn info.png");
+  }
+  #Beach {
+    grid-area: Beach;
+    background-image: url("../images/Beach hazards.png");
+  }
+  #News {
+    grid-area: News;
+    background-image: url("../images/NWS news.png");
+    
+  }
+  .categoryGridArea {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 5px;
+    cursor: pointer;
+    display: grid;
+    align-content: end;
+  }
+  
+  .heading {
+    background-color: #1C6E8C;
+    padding: 15px;
+    color: white;
+    font-size: 18px;
+  }
+
+
+
+  /* On screens that are 950px wide or less, adjust position of the top search bar
+  and reduce padding on the first flex box */
+  @media only screen and (max-width: 950px) {
+    .topright {
+      margin: 20px 0px 0px 30px;
+    }
+    .yellowalert {
+      margin: 40px 20px;
+      padding: 10px 20px 10px 20px;
+    }
+    .personalize {
+      padding: 20px 10px 10px 10px;
+    }
+  }
+
+  /* On screens that are 600px wide or less, adjust position of top search bar, reduce heading,
+  and shift grid to one column */
+  @media only screen and (max-width: 600px) {
+    .topright {
+      position: static;
+      margin: 20px 0px 0px 30px;
+    }
+    .topleftname {
+      margin-top: 40px;
+      font-size: x-large;
+    }
+    #categoryGrid {
+      margin: 50px 0px;
+      display: grid;
+      grid-template-rows: 300px 300px 300px 300px;
+      grid-template-columns: 1fr;
+      grid-template-areas:
+      "Tornado" 
+      "Thunderstorm"
+      "Beach"
+      "News"
+      ;
+    }
+  }
