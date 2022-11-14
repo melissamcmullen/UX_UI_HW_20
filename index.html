@@ -1,109 +1,114 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>NWS</title>
+<!doctype html>
+<html lang="en">
+  <head>
+
+   <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet"> 
-</head>
 
-<body>
-  <section> 
-    <div class="heroimage">
-     <img src="images/thunderstorm2_1000.jpg" alt="Thunderstorm" width="100%"> 
-     <div class="topleftlogo"><img src="images/NWS logo NEW.png" alt="NWS logo" width="100"></div> 
-     <div class="topleftname">National Weather Service</div>
-     <div class="topright"><input type="text" placeholder="Search NWS site...">
-      <button type="submit" value="Submit">Submit</button></div> 
-    </div>  
+    <title>National Weather Service</title>
+  </head>
+  <body>
 
-    <div class="topnav">
-      <a class="active">Weather Alerts</a>
-      <a>Current & Future Weather</a>
-      <a>Past Weather</a>
-      <a>Weather Resources</a>
-      <a>Climate Monitoring</a>
-      <a>Education</a>
-      <a>About NWS</a>
-    </div>
-  </section> 
-
-  <section>
-    <div class="flex-thingy"> 
-      <div class="yellowalert">
-        <h2> <img src="images/Alert icon.png" width="70px">Active Weather Alerts</h2>
-        <p><b>Heat, Fire Weather, and Flooding in the West.</b></p>
-        <p>The record-breaking heat wave across the West will continue the next couple of days, especially in California, and may linger this weekend in the Northwest. Fire weather conditions remain elevated to critical the next two days from the Northwest to the central High Plains. Flood watches are in effect for southern California and Nevada into western Arizona for heavy rain from Kay tropical moisture.</p>
-      </div>
-
-      <div class="personalize">
-          <h2>Personalize Your Weather</h2>
-          <p>1. Find local alerts</p>
-          <p>2. Check current weather</p>
-          <p>3. See weather forecasts</p>
-        <div class="searchcity"><input type="text" placeholder="Local city or zip">
-          <button type="submit" value="Submit">Submit</button></div>  
+    <!-- Jumbotron -->
+    <div class="jumbotron">
+      <div class="jumboCopy">
+        <h1><bold>National Weather Service</bold></h1>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search NWS site..." aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
       </div>
     </div>
-  </section>
+    <!-- End jumbotron -->
 
-  <section> 
-    <div class="mapheading">
-      <h3>Current Weather Map</h3>
-    </div>
-    <div class="flex-container">
-      <div> 
-        <img src="images/Map key.png" alt="Map key" height=600px>
+    <!-- Top Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #1C6E8C;">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Weather Alerts</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Current & Future Weather</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Past Weather</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Weather Resources</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Climate Monitoring</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Education</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">About NWS</a>
+            </li>
+          </ul>
+        </div>
       </div>
-      <div> 
-        <img src="images/US map.png" alt="US Map" height=600px>
+    </nav>
+    <!-- end Top Navigation Bar -->
+
+ <!-- Cards -->
+ <div class="container-fluid content">
+  <div class="row showsNear">
+
+    <!-- Card 1 -->
+    <div class="cardContainer col-lg-4 col-md-4 col-sm-12">
+      <div class="card">
+        <div class="card-img-top" alt="..."> </div>
+        <div class="card-body">
+          <h5 class="card-title">Active Weather Alerts</h5>
+          <p class="card-text">Heat, Fire Weather, and Flooding in the West.
+            <p class="card-text">The record-breaking heat wave across the West will continue the next couple of days, especially in California, and may linger this weekend in the Northwest. Fire weather conditions remain elevated to critical the next two days from the Northwest to the central High Plains. Flood watches are in effect for southern California and Nevada into western Arizona for heavy rain from Kay tropical moisture.</p>
+        </div>
       </div>
     </div>
-  </section>
+    <!-- End card 1 -->
 
-  <section id="categoryGrid">
-    <div id="Tornado" class="categoryGridArea">
-      <div class="heading">Tornado Safety</div>
+    <!-- Card 2 -->
+    <div class="cardContainer col-lg-4 col-md-4 col-sm-12">
+      <div class="card">
+        <div class="card-img-top" alt="..."> </div>
+        <div class="card-body">
+          <h5 class="card-title">Personalize Your Weather</h5>
+          <p class="card-text">1. Find local alerts</p>
+          <p class="card-text">2. Check current weather</p>  
+          <p class="card-text">3. See weather forecasts</p>
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Local city or zip..." aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
     </div>
-    <div id="Thunderstorm" class="categoryGridArea">
-      <div class="heading">Thunderstorm Information</div>
-    </div>
-    <div id="Beach" class="categoryGridArea">
-      <div class="heading">Beach Hazards</div>
-    </div>
-    <div id="News" class="categoryGridArea">
-      <div class="heading">NWS News to Know</div>
-    </div>
-  </section>
+    <!-- End card 2 -->
 
-  <section>
-  <a href="url">Return to top</a>
 
-    <div class="bottomnav">
-      <a class="active">Disclaimers</a>
-      <a>Informational quality</a>
-      <a>Privacy policy</a>
-      <a>Freedom of information act</a>
-      <a>Career information</a>
-      <a>Glossary</a>
-      <a>USA.gov</a>
-    </div>
+  <!-- Optional JavaScript -->
+      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
 
-    <div class="footerleft">
-      <img src="images/NWS logo NEW.png" alt="NWS logo" width="40" height="40"> 
-      <img src="images/NOAA logo.png" alt="NOAA logo" width="40" height="40"> 
-      <h3>National Weather Service</h3>
-      <p class="small">National Oceanic and Atmospheric Administration</p>
-    </div>
-
-    <div class="footerright">
-      <img src="images/Social media logos.png" alt="Social media icons" height="40"> 
-      <h3>NWS Contact Center</h3>
-      <p class="small">(800) CALL-GOVT &nbsp; &nbsp; &nbsp; &nbsp; info@agency.gov</p>
-    </div>
-  </section>
-
-</body>
-
-</html>
+  </body>
+  </html>
+  
