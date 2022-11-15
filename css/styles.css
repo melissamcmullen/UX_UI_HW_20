@@ -1,3 +1,5 @@
+
+
 /* Text */
 h1, h2, h3 , h4, h5, h6 {
   font-family: 'Poppins', sans-serif;
@@ -7,7 +9,7 @@ p {
 }
 
 /* Jumbotron  */
-.jumbotron {
+.jumbotron_custom {
   background-image: url(../images/thunderstorm2_1200.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -22,6 +24,6 @@ p {
   min-width: 500px;
   max-width: 700px;
   font-weight: bolder;
-  color: white;
+  color: white !important;
   text-align: left;
 }
