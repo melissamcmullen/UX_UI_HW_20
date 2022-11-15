@@ -9,6 +9,9 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet"> 
 
     <title>National Weather Service</title>
   </head>
@@ -17,10 +20,12 @@
     <!-- Jumbotron -->
     <div class="jumbotron jumbotron_custom">
       <div class="jumboCopy">
+        <img src="images/NWS logo NEW 2.png" alt="NWS logo">
         <h1><bold>National Weather Service</bold></h1>
         <form class="d-flex">
           <input class="form-control me-2" type="search" placeholder="Search NWS site..." aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Search</button>
+          <button type="button" class="btn btn-light">Search</button>
+
         </form>
       </div>
     </div>
@@ -35,22 +40,22 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link text-light" aria-current="page" href="#">Weather Alerts</a>
+              <a class="nav-link text-light" aria-current="page" href="#">Weather Alerts &nbsp &nbsp &nbsp</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-light" href="#">Current & Future Weather</a>
+              <a class="nav-link text-light" href="#">Current & Future Weather &nbsp &nbsp &nbsp</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-light" aria-current="page" href="#">Past Weather</a>
+              <a class="nav-link text-light" aria-current="page" href="#">Past Weather &nbsp &nbsp &nbsp</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-light" aria-current="page" href="#">Weather Resources</a>
+              <a class="nav-link text-light" aria-current="page" href="#">Weather Resources &nbsp &nbsp &nbsp</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-light" aria-current="page" href="#">Climate Monitoring</a>
+              <a class="nav-link text-light" aria-current="page" href="#">Climate Monitoring &nbsp &nbsp &nbsp</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-light" aria-current="page" href="#">Education</a>
+              <a class="nav-link text-light" aria-current="page" href="#">Education &nbsp &nbsp &nbsp</a>
             </li>
             <li class="nav-item">
               <a class="nav-link text-light" aria-current="page" href="#">About NWS</a>
@@ -61,17 +66,19 @@
     </nav>
     <!-- end Top Navigation Bar -->
 
- <!-- Cards -->
- <div class="container-fluid content">
-  <div class="row showsNear">
+  <!-- Cards for alert and personalize -->
+<div class="container-fluid content">
+ <div class="row showsNear">
 
     <!-- Card 1 -->
-    <div class="cardContainer col-lg-4 col-md-4 col-sm-12">
-      <div class="card">
-        <div class="card-img-top" alt="..."> </div>
-        <div class="card-body">
-          <h5 class="card-title">Active Weather Alerts</h5>
-          <p class="card-text">Heat, Fire Weather, and Flooding in the West.
+    <div class="cardContainer col-lg-8 mt-4">
+      <div class="card p-3 bg-warning">
+        <div class="card-img-top"> </div>
+        <div class="card-body p-3 mt-4">
+          <img src="images/Alert icon.png" alt="Alert icon">
+          <br>
+          <h5 class="card-title font-weight-bold">Active Weather Alerts</h5>
+          <p class="card-text font-weight-bold">Heat, Fire Weather, and Flooding in the West.
             <p class="card-text">The record-breaking heat wave across the West will continue the next couple of days, especially in California, and may linger this weekend in the Northwest. Fire weather conditions remain elevated to critical the next two days from the Northwest to the central High Plains. Flood watches are in effect for southern California and Nevada into western Arizona for heavy rain from Kay tropical moisture.</p>
         </div>
       </div>
@@ -79,22 +86,154 @@
     <!-- End card 1 -->
 
     <!-- Card 2 -->
-    <div class="cardContainer col-lg-4 col-md-4 col-sm-12">
-      <div class="card">
-        <div class="card-img-top" alt="..."> </div>
+    <div class="cardContainer col-lg-4 mt-4">
+      <div class="card p-3 mb-2 bg-info">
+        <div class="card-img-top"> </div>
         <div class="card-body">
-          <h5 class="card-title">Personalize Your Weather</h5>
+          <br>
+          <h5 class="card-title font-weight-bold">Personalize Your Weather</h5>
           <p class="card-text">1. Find local alerts</p>
           <p class="card-text">2. Check current weather</p>  
           <p class="card-text">3. See weather forecasts</p>
+          <br>
           <form class="d-flex">
             <input class="form-control me-2" type="search" placeholder="Local city or zip..." aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Search</button>
+            <button type="button" class="btn btn-light">Search</button>          
           </form>
         </div>
       </div>
     </div>
     <!-- End card 2 -->
+
+
+
+    <!-- Header on map  -->
+    <div class="cardContainer col-lg-12 mt-4">
+      <div class="w-auto p-3 text-light" style="background-color: #1C6E8C;"><h5>Current Weather Map</h5></div>
+  </div>
+  <!-- end of Header on map  -->
+
+
+
+
+<!-- map image  -->
+<div class="w-100 p-3">
+  <img src="images/US map 2.png" alt="US map with key">
+</div>
+<!-- end map image  -->
+
+
+
+
+<!-- Grid of images -->
+<div class="container-fluid content mt-2">
+  <div class="row">
+
+    <!-- Card 1 -->
+    <div class="cardContainer col-lg-4 col-md-4 col-sm-12">
+      <div class="card ">
+        <img src="images/Tornado safety.png" class="card-img-top">
+        <div class="card-body text-light" style="background-color: #1C6E8C;">
+          <h5 class="card-title">Tornado Safety</h5>
+        </div>
+      </div>
+    </div>
+    <!-- End card 1 -->
+
+    <!-- Card 2 -->
+    <div class="cardContainer col-lg-4 col-md-4 col-sm-12">
+      <div class="card ">
+        <img src="images/Thunderstorn info.png" class="card-img-top">
+        <div class="card-body text-light" style="background-color: #1C6E8C;">
+          <h5 class="card-title">Thunderstorm Information</h5>
+        </div>
+      </div>
+    </div>
+    <!-- End card 2 -->
+
+    <!-- Card 3 -->
+    <div class="cardContainer col-lg-4 col-md-4 col-sm-12">
+      <div class="card ">
+        <img src="images/NWS news 2.png" class="card-img-top">
+        <div class="card-body text-light" style="background-color: #1C6E8C;">
+          <h5 class="card-title">NWS News to Know</h5>
+        </div>
+      </div>
+    </div>
+      </div>
+    </div>
+    <!-- End card 3 -->
+
+     <!-- Card 4 -->
+     <div class="cardContainer col-lg-12 col-md-12 col-sm-12 mt-4">
+      <div class="card ">
+            <img src="images/Beach hazards 2.png" class="card-img-top">
+            <div class="card-body text-light" style="background-color: #1C6E8C;">
+              <h5 class="card-title">Beach Hazards</h5>
+            </div>
+      </div>
+      </div>
+    <!-- End card 1 -->
+
+  </div>
+</div>
+<!-- End cards -->
+
+
+
+
+ <!-- Bottom Navigation Bar -->
+ <nav class="navbar navbar-expand-lg navbar-light mt-4" style="background-color: #3F9686;">
+  <div class="container-fluid">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link text-light" aria-current="page" href="#">Disclaimers &nbsp &nbsp &nbsp</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-light" href="#">Informational quality &nbsp &nbsp &nbsp</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-light" aria-current="page" href="#">Privacy policy &nbsp &nbsp &nbsp</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-light" aria-current="page" href="#">Freedom of information act &nbsp &nbsp &nbsp</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-light" aria-current="page" href="#">Career information &nbsp &nbsp &nbsp</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-light" aria-current="page" href="#">Glossary &nbsp &nbsp &nbsp</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-light" aria-current="page" href="#">USA.gov</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- end Bottom Navigation Bar -->
+
+
+<!-- bottom footer -->
+<div class="footerleft">
+  <img src="images/NWS logo NEW.png" alt="NWS logo" width="40" height="40"> 
+  <img src="images/NOAA logo.png" alt="NOAA logo" width="40" height="40"> 
+  <h3>National Weather Service</h3>
+  <p class="small">National Oceanic and Atmospheric Administration</p>
+</div>
+
+<div class="footerright">
+  <img src="images/Social media logos.png" alt="Social media icons" height="40"> 
+  <h3>NWS Contact Center</h3>
+  <p class="small">(800) CALL-GOVT &nbsp; &nbsp; &nbsp; &nbsp; info@agency.gov</p>
+</div>
+<!-- end bottom footer -->
+
+
 
 
   <!-- Optional JavaScript -->
